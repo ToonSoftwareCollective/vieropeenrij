@@ -1,0 +1,5 @@
+1.0.0
+- initial release
+- vier op een rij tegen Toon, drie niveaus (makkelijk / normaal / moeilijk)
+- keuze wie begint, score wordt bewaard in /mnt/data/tsc/vieropeenrij.userSettings.json
+- tile toont het bord en de score, menu item en systray icon openen het spel
