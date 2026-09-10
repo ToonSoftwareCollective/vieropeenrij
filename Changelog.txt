@@ -1,3 +1,9 @@
+1.1.0
+- spelen tegen een mens: op een andere Toon in het thuisnetwerk, of via een server op internet
+- nieuw instellingenscherm (knop rechtsboven): tegenstander, eigen naam, IP adres andere Toon, server adres en kamer
+- andere Toon: geen extra software nodig, elke Toon publiceert het spel via zijn eigen webserver (http://<toon>/vieropeenrij.json)
+- server: vieropeenrij.php of vieropeenrij_server.py uit de map server op een eigen webserver zetten
+- aparte score tegen mensen, tegel meldt "Jouw beurt!" als de tegenstander heeft gezet
 1.0.0
 - initial release
 - vier op een rij tegen Toon, drie niveaus (makkelijk / normaal / moeilijk)

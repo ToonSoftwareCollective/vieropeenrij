@@ -14,7 +14,7 @@ Tile {
 
 	Text {
 		id: tileTitle
-		text: "Vier op een rij"
+		text: (app.networkMode && app.myTurn) ? "Jouw beurt!" : "Vier op een rij"
 		anchors {
 			baseline: parent.top
 			baselineOffset: isNxt ? 32 : 25
@@ -59,7 +59,7 @@ Tile {
 						width: miniCell - 4
 						height: width
 						radius: width / 2
-						color: (cellValue === Game.HUMAN) ? "#e2001a" : (cellValue === Game.COMPUTER) ? "#f7c600" : "#f4f4f4"
+						color: (cellValue === Game.RED) ? "#e2001a" : (cellValue === Game.YELLOW) ? "#f7c600" : "#f4f4f4"
 					}
 				}
 			}
@@ -69,7 +69,7 @@ Tile {
 
 	Text {
 		id: tileScore
-		text: "Jij " + app.wins + " - Toon " + app.losses + " - Gelijk " + app.draws
+		text: app.scoreText
 		anchors {
 			baseline: parent.bottom
 			baselineOffset: isNxt ? -14 : -12
